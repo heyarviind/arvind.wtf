@@ -1,4 +1,4 @@
 ---
-title: The Vue Point
-subtext: Updates, tips & opinions from the maintainers of Vue.js.
+title: Arvind Singh
+subtext: A blog about my life and maybe some tech posts 😉
 ---

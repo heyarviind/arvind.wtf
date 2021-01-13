@@ -5,8 +5,8 @@
       <ul class="flex justify-center xl:block space-x-8 sm:space-x-12 xl:space-x-0 xl:space-y-8">
         <li class="flex items-center space-x-2">
           <img
-            v-if="data.gravatar"
-            :src="'https://gravatar.com/avatar/' + data.gravatar"
+            
+            :src="'/arvind-singh.jpg'"
             alt="author image"
             class="w-10 h-10 rounded-full"
           />
