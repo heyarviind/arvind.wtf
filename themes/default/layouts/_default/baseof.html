@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html
+  dir="{{ .Site.Language.LanguageDirection | default "ltr" }}"
+  lang="{{- site.Language.Lang -}}"
+  data-theme="{{- .Site.Params.displayMode -}}"
+>
+  {{- partial "head.html" . -}}
+  <body class="container mx-auto max-w-3xl px-3 md:px-0">
+    <header>{{ partial "navbar.html" . }}</header>
+    <div class="wrapper">
+      <main>
+        <div class="autopagerize_page_element">
+          <div class="content">
+            {{- block "main" . }}{{- end }}
+          </div>
+        </div>
+      </main>
+    </div>
+
+    {{- partial "footer.html" (dict "context" . "footerClassModifier" "base") -}}
+
+    {{- if (eq .Site.Params.simpleAnalytics.enable true) -}}
+      {{- partial "analytics/simpleanalytics.html" . -}}
+    {{- end -}}
+  </body>
+</html>

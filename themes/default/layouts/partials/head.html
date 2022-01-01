@@ -1,0 +1,60 @@
+<head>
+  <title>
+    {{ .Site.Params.author }}{{ with .Title }}
+      |
+      {{ . }}
+    {{ end }}
+  </title>
+
+  <!-- Meta -->
+  <meta charset="utf-8" />
+  {{- hugo.Generator -}}
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta
+    name="description"
+    content="{{ if .Params.description }}
+      {{ .Params.description }}
+    {{ else }}
+      {{ .Site.Params.description }}
+    {{ end }}"
+  />
+  {{ if .Params.redirectUrl }}
+    <meta http-equiv="refresh" content="1; url={{ .Params.redirectUrl }}" />
+  {{ end }}
+
+  {{- if .Site.Params.googleSiteVerify }}
+    <meta name="google-site-verification" content="{{ .Site.Params.googleSiteVerify }}" />
+  {{- end -}}
+
+  <!-- css -->
+  <link rel="stylesheet" href="/styles.css" />
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="{{ .Site.Params.favicon | relURL }}favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.Params.favicon | relURL }}apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.Params.favicon | relURL }}favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ .Site.Params.favicon | relURL }}favicon-16x16.png" />
+
+  <link rel="canonical" href="{{ .Permalink }}" />
+
+  <!-- RSS -->
+  {{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
+
+
+  {{ end -}}
+
+  <!-- Twitter Cards -->
+  {{ template "_internal/twitter_cards.html" . }}
+
+
+  <!-- Open Graph -->
+  {{- if isset .Site.Taxonomies "series" }}
+    {{- if not (eq (len .Site.Taxonomies.series) 0) -}}
+      {{ template "_internal/opengraph.html" . }}
+    {{- end -}}
+  {{- end }}
+
+  <!-- Schema.org-->
+  {{ partial "schema.html" . }}
+</head>

@@ -1,0 +1,10 @@
+{{ define "main" }}
+
+<br />
+
+<h1>{{ .Title }}</h1>
+{{ if .Params.description }}<p class="description">{{.Params.description}}</p>{{ end }}
+<br />
+{{ .Content }}
+
+{{ end }}
