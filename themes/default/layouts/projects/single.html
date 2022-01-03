@@ -4,26 +4,26 @@
 	<img src="/img/projects/{{ .Params.icon }}" width="100px" class="mx-auto mb-4" />
 	<h1>{{ .Title }}</h1>
 	<p class="description">{{ .Params.description }}</p>
-	<a href="">{{ .Params.website }}</a>
+	{{ if .Params.website }}
+	<a target="_blank" href="{{ .Params.website }}">{{ .Params.website }}</a>
+	{{ end }}
 </div>
 
-<div class="grid grid-cols-4 text-center mb-10 border-y py-6 border-gray-50">
+<div class="grid grid-cols-3 text-center mb-10 border-y py-6 border-gray-50">
 	<div class="flex flex-col">
-		<span class="text-3xl font-extrabold">Live</span>
+		<span class="text-3xl font-extrabold">{{ .Params.status }}</span>
 		<span class="text-gray-500">Status</span>
 	</div>
 	<div class="flex flex-col">
-		<span class="text-3xl font-extrabold">Live</span>
+		<span class="text-3xl font-extrabold">{{ .PublishDate.Format "Jan 2, 20" }}</span>
 		<span class="text-gray-500">Launched On</span>
 	</div>
 	<div class="flex flex-col">
-		<span class="text-3xl font-extrabold">Live</span>
-		<span class="text-gray-500">Got Paying Customers</span>
-	</div>
-	<div class="flex flex-col">
-		<span class="text-3xl font-extrabold">Live</span>
+		<span class="text-3xl font-extrabold">{{ if .Params.payingUsers }}Yes{{ else }}No{{ end }}</span>
 		<span class="text-gray-500">Got Paying Customers</span>
 	</div>
 </div>
+
+{{ .Content }}
 
 {{ end }}

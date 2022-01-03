@@ -2,3 +2,6 @@ baseURL = "https://arvind.wtf/"
 languageCode = "en-us"
 title = "Arvind Singh"
 theme="default"
+
+pygmentsCodeFences = true
+pygmentsUseClasses = true

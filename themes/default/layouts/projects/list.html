@@ -8,16 +8,24 @@
 {{ end }}
 
 <br /> <br />
-
+	
+	{{ $index := 0 }}
 	{{ range where .Site.RegularPages "Section" .Section }}
-	    <div class="flex space-x-2 py-4 border-b">
+		{{ if eq $index 4 }}
+			<div class="bg-yellow-50 bg-opacity-50 border border-yellow-100 my-3 p-6">
+				<h3>Like my projects?</h3>
+				<p>Did you like my projects and you have an idea? Let me bring it to the life for you.</p>
+				<a href="/hire-me">Hire Me</a>
+			</div>
+		{{ end }}
+	    <div class="flex space-x-2 py-4 border-b last:border-0 projectRow">
 	    	<div> 
 	    		<img src="/img/projects/{{ .Params.icon }}" width="50px" /></div>
 	    	<div>
 	    		<a href="{{.Permalink}}"><h2>{{ .Title }}</h2></a>
-	    		<p class="description">{{ .Params.description }}</p>
+	    		<p class="description m-0">{{ .Params.description }}</p>
 	    	</div>
 	    </div>
+	  {{ $index = add $index 1 }}
 	{{ end }}
-
 {{ end }}
