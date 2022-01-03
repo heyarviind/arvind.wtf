@@ -19,14 +19,16 @@
 	</div>
 	
 
-	{{ range where .Site.Pages "Section" "posts"}}
-    <div class="flex space-x-2 py-2 border-b last:border-0 projectRow items-center">
-	  		<span>→</span>
-	  	<div>
-	  		<a href="{{.Permalink}}"><h3 class="font-semibold text-gray-700 text-lg">{{ .Title }}</h3></a>
-	  		<p class="description m-0">{{ .Params.description }}</p>
-	  	</div>
-	  </div>
+	{{ range first 5 (where .Site.Pages "Section" "posts")}}
+		{{ if ne .Title "Posts" }}
+	    <div class="flex space-x-2 py-2 border-b last:border-0 projectRow items-center">
+		  		<span>→</span>
+		  	<div>
+		  		<a href="{{.Permalink}}"><h3 class="font-semibold text-gray-700 text-lg">{{ .Title }}</h3></a>
+		  		<p class="description m-0">{{ .Params.description }}</p>
+		  	</div>
+		  </div>
+		{{ end }}
 	{{ end }}
 </div>
 
