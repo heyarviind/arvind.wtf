@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+	<br />
+
+	<h1>{{ .Title }}</h1>
+	{{ if .Params.description }}
+		<p class="description">{{.Params.description}}</p>
+	{{ end }}
+
+	<br /> <br />
+		
+	{{ range where .Site.RegularPages "Section" .Section }}
+	  <div class="flex space-x-2 py-4 border-b last:border-0 projectRow items-center">
+	  		<span>→</span>
+	  	<div>
+	  		<a href="{{.Permalink}}"><h3 class="font-semibold text-gray-700">{{ .Title }}</h3></a>
+	  		<p class="description m-0">{{ .Params.description }}</p>
+	  	</div>
+	  </div>
+	{{ end }}
+
+{{ end }}

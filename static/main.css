@@ -64,7 +64,7 @@ pre {
 }
 
 .btn {
-	@apply bg-primary px-4 py-2 flex items-center text-sm text-gray-700 no-underline bg-opacity-60 border border-primary;
+	@apply bg-primary px-4 py-2 flex items-center text-sm text-gray-700 no-underline bg-opacity-40 border border-primary;
 }
 
 h1 {

@@ -677,6 +677,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 0.7;
 }
 
+.bg-opacity-80 {
+  --tw-bg-opacity: 0.8;
+}
+
+.bg-opacity-90 {
+  --tw-bg-opacity: 0.9;
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -734,6 +742,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.25rem;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-black {
   font-weight: 900;
 }
@@ -746,9 +759,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 800;
 }
 
+.font-semibold {
+  font-weight: 600;
+}
+
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 body {
@@ -836,10 +858,9 @@ pre {
   display: flex;
   align-items: center;
   border-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(205 238 255 / var(--tw-border-opacity));
-  background-color: rgb(205 238 255 / var(--tw-bg-opacity));
-  --tw-bg-opacity: 0.6;
+  border-color: rgba(196,240,255,0.9);
+  background-color: rgba(196,240,255,0.9);
+  --tw-bg-opacity: 0.4;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.5rem;

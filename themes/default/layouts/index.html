@@ -13,7 +13,21 @@
 </div>
 
 <div class="mt-10">
-	<h2>Posts</h2>
+	<div class="flex items-center justify-between">
+		<div><h2>Posts</h2></div>
+		<div><a href="/posts">View all posts →</a></div>
+	</div>
+	
+
+	{{ range where .Site.Pages "Section" "posts"}}
+    <div class="flex space-x-2 py-2 border-b last:border-0 projectRow items-center">
+	  		<span>→</span>
+	  	<div>
+	  		<a href="{{.Permalink}}"><h3 class="font-semibold text-gray-700 text-lg">{{ .Title }}</h3></a>
+	  		<p class="description m-0">{{ .Params.description }}</p>
+	  	</div>
+	  </div>
+	{{ end }}
 </div>
 
 <div class="mt-10">
