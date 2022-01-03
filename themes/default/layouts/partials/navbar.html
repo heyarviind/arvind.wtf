@@ -1,5 +1,20 @@
-<nav class="flex justify-between items-center">
-	<div class="d-flex space-x-3">
+<nav class="flex justify-between items-center bg-white">
+	<div class="lg:hidden">
+		<label for="menu">
+			<img src="/img/menu.svg" alt="menu icon" width="30px" />
+			<input type="checkbox" id="menu" class="hidden" />
+			<div class="fixed top-14 right-0 left-0 bottom-0 bg-white bg-opacity-70 z-10 px-6 text-3xl font-bold text-center">
+				<div class="h-1/2 flex flex-col justify-around bg-white border-b-2 relative z-10">
+					<a href="/">Home</a>
+					<a href="/projects">Projects</a>
+					<a href="/posts">Posts</a>
+					<a href="/hire-me">Hire Me</a>
+				</div>
+			</div>
+			
+		</label>
+	</div>
+	<div class="space-x-3 hidden lg:d-flex">
 		<a href="/">Home</a>
 		<a href="/projects">Projects</a>
 		<a href="/posts">Posts</a>

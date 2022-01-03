@@ -464,6 +464,51 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.fixed {
+  position: fixed;
+}
+
+.relative {
+  position: relative;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.top-14 {
+  top: 3.5rem;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.top-10 {
+  top: 2.5rem;
+}
+
+.top-4 {
+  top: 1rem;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
 .m-0 {
   margin: 0px;
 }
@@ -523,6 +568,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
+.h-1\/2 {
+  height: 50%;
+}
+
 .w-full {
   width: 100%;
 }
@@ -551,6 +604,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-between;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -574,6 +631,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .border-b {
   border-bottom-width: 1px;
+}
+
+.border-b-2 {
+  border-bottom-width: 2px;
 }
 
 .border-green-100 {
@@ -615,16 +676,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 0.5;
 }
 
-.p-8 {
-  padding: 2rem;
-}
-
-.p-6 {
-  padding: 1.5rem;
+.bg-opacity-70 {
+  --tw-bg-opacity: 0.7;
 }
 
 .p-4 {
   padding: 1rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-6 {
@@ -656,9 +717,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: center;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-lg {
@@ -676,13 +737,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.25rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .font-black {
   font-weight: 900;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .font-extrabold {
@@ -703,7 +763,6 @@ body {
 
 a {
   position: relative;
-  z-index: 20;
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
@@ -761,6 +820,14 @@ a:hover:before {
 
 .content h2 {
   margin-bottom: 0.5rem;
+}
+
+#menu + div {
+  display: none;
+}
+
+#menu:checked + div {
+  display: block;
 }
 
 .projectRow h2, .projectRow img, .projectRow .description {
@@ -1168,22 +1235,9 @@ h3 {
   .sm\:flex-row {
     flex-direction: row;
   }
-
-  .sm\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
 }
 
 @media (min-width: 768px) {
-  .md\:w-auto {
-    width: auto;
-  }
-
-  .md\:flex-row {
-    flex-direction: row;
-  }
-
   .md\:p-8 {
     padding: 2rem;
   }
@@ -1195,8 +1249,8 @@ h3 {
 }
 
 @media (min-width: 1024px) {
-  .lg\:w-auto {
-    width: auto;
+  .lg\:hidden {
+    display: none;
   }
 
   .lg\:text-5xl {

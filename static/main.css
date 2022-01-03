@@ -7,7 +7,7 @@ body {
 }
 
 a {
-	@apply text-gray-600 relative z-20;
+	@apply text-gray-600 relative;
 }
 
 a:not(.btn):before {
@@ -42,6 +42,14 @@ a:hover:before {
 
 .content h2 {
 	@apply mb-2;
+}
+
+#menu + div {
+	@apply hidden;
+}
+
+#menu:checked + div {
+	@apply block;
 }
 
 .projectRow h2,
