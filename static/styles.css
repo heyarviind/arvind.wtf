@@ -481,8 +481,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 0px;
 }
 
-.top-14 {
-  top: 3.5rem;
+.top-\[54px\] {
+  top: 54px;
 }
 
 .right-0 {
@@ -497,14 +497,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: 0px;
 }
 
-.top-10 {
-  top: 2.5rem;
-}
-
-.top-4 {
-  top: 1rem;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -516,6 +508,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .my-10 {
@@ -629,12 +626,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-bottom-width: 1px;
 }
 
-.border-b {
-  border-bottom-width: 1px;
-}
-
 .border-b-2 {
   border-bottom-width: 2px;
+}
+
+.border-b {
+  border-bottom-width: 1px;
 }
 
 .border-green-100 {
@@ -761,30 +758,21 @@ body {
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
-a {
-  position: relative;
+a:not(.btn) {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
+  transition: background-size .1s ease;
+  background-image: linear-gradient(
+		120deg, rgba(196,240,255,0.7), rgba(196,240,255,0.9));
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  padding: 4px 0;
 }
 
-a:not(.btn):before {
-  content: "";
-  width: 100%;
-  position: absolute;
-  left: 0px;
-  bottom: -0.25rem;
-  z-index: -10;
-  height: 0.125rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(205 238 255 / var(--tw-bg-opacity));
-  transition-property: all;
-  transition-duration: 150ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-a:hover:before {
-  height: 0.5rem;
-}
+a:hover {
+  background-size: 100% 100%;
+};
 
 .content {
   font-size: 1.25rem;
@@ -892,7 +880,7 @@ h2 {
   display: inline-block;
   font-size: 1.5rem;
   line-height: 2rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.025em;
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
@@ -1249,6 +1237,10 @@ h3 {
 }
 
 @media (min-width: 1024px) {
+  .lg\:block {
+    display: block;
+  }
+
   .lg\:hidden {
     display: none;
   }

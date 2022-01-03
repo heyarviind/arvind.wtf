@@ -6,19 +6,20 @@ body {
 	@apply my-3 text-gray-800;
 }
 
-a {
-	@apply text-gray-600 relative;
+a:not(.btn) {
+	@apply text-gray-600;
+	transition: background-size .1s ease;
+  background-image: linear-gradient(
+		120deg, rgba(196,240,255,0.7), rgba(196,240,255,0.9));
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  padding: 4px 0;
 }
 
-a:not(.btn):before {
-	content: "";
-	width: 100%;
-	@apply bg-primary h-0.5 absolute left-0 -bottom-1 z-0 transition-all duration-150 ease-in-out -z-10;
-}
-
-a:hover:before {
-	@apply h-2;
-}
+a:hover {
+	background-size: 100% 100%;
+};
 
 .content {
 	@apply text-xl text-gray-700;
@@ -71,7 +72,7 @@ h1 {
 }
 
 h2 {
-	@apply inline-block text-2xl sm:text-3xl font-extrabold text-gray-900 tracking-tight dark:text-gray-200;
+	@apply inline-block text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight dark:text-gray-200;
 }
 
 h3 {
