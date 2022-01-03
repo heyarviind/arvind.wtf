@@ -11,16 +11,16 @@
 
 <div class="grid grid-cols-3 text-center mb-10 border-y py-6 border-gray-50">
 	<div class="flex flex-col">
-		<span class="text-3xl font-extrabold">{{ .Params.status }}</span>
+		<span class="text-lg lg:text-2xl xl:text-3xl font-extrabold">{{ .Params.status }}</span>
 		<span class="text-gray-500">Status</span>
 	</div>
 	<div class="flex flex-col">
-		<span class="text-3xl font-extrabold">{{ .PublishDate.Format "Jan 2, 20" }}</span>
+		<span class="text-lg lg:text-2xl xl:text-3xl font-extrabold">{{ .PublishDate.Format "Jan 2, 20" }}</span>
 		<span class="text-gray-500">Launched On</span>
 	</div>
 	<div class="flex flex-col">
-		<span class="text-3xl font-extrabold">{{ if .Params.payingUsers }}Yes{{ else }}No{{ end }}</span>
-		<span class="text-gray-500">Got Paying Customers</span>
+		<span class="text-lg lg:text-2xl xl:text-3xl font-extrabold">{{ if .Params.payingUsers }}Yes{{ else }}No{{ end }}</span>
+		<span class="text-gray-500">Paying User</span>
 	</div>
 </div>
 
