@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Arvind Singh</title>
+    <link>https://arvind.wtf/projects/</link>
+    <description>Recent content in Projects on Arvind Singh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 31 Dec 2021 16:54:14 +0530</lastBuildDate><atom:link href="https://arvind.wtf/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AyyPI</title>
+      <link>https://arvind.wtf/projects/ayypi/</link>
+      <pubDate>Fri, 31 Dec 2021 16:54:14 +0530</pubDate>
+      
+      <guid>https://arvind.wtf/projects/ayypi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Boilify</title>
+      <link>https://arvind.wtf/projects/boilify/</link>
+      <pubDate>Fri, 31 Dec 2021 16:54:14 +0530</pubDate>
+      
+      <guid>https://arvind.wtf/projects/boilify/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ConvertX</title>
+      <link>https://arvind.wtf/projects/convertx/</link>
+      <pubDate>Fri, 31 Dec 2021 16:54:14 +0530</pubDate>
+      
+      <guid>https://arvind.wtf/projects/convertx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Feedfront.me</title>
+      <link>https://arvind.wtf/projects/feedfront/</link>
+      <pubDate>Fri, 31 Dec 2021 16:54:14 +0530</pubDate>
+      
+      <guid>https://arvind.wtf/projects/feedfront/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Helppie.me</title>
+      <link>https://arvind.wtf/projects/helppie/</link>
+      <pubDate>Fri, 31 Dec 2021 16:54:14 +0530</pubDate>
+      
+      <guid>https://arvind.wtf/projects/helppie/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HeySpoil.me</title>
+      <link>https://arvind.wtf/projects/heyspoilme/</link>
+      <pubDate>Fri, 31 Dec 2021 16:54:14 +0530</pubDate>
+      
+      <guid>https://arvind.wtf/projects/heyspoilme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Loggie</title>
+      <link>https://arvind.wtf/projects/loggie/</link>
+      <pubDate>Fri, 31 Dec 2021 16:54:14 +0530</pubDate>
+      
+      <guid>https://arvind.wtf/projects/loggie/</guid>
+      <description>Loggie.io was designed to log errors/messages remotely and easily. It contained all the minimal features which makes it cheaper than other logging platforms and good enough to do the job.
+It consisted of 5 severiety levels:
+ Info (Low) Debug Warning Error Fatal (High)  You can send logs to the loggie server by using a library written for your choice langugae. For instance, if you are using javascript in your project, you can use javascript library to send the logs:</description>
+    </item>
+    
+    <item>
+      <title>SideInvest.io</title>
+      <link>https://arvind.wtf/projects/sideinvest/</link>
+      <pubDate>Fri, 31 Dec 2021 16:54:14 +0530</pubDate>
+      
+      <guid>https://arvind.wtf/projects/sideinvest/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UICardio</title>
+      <link>https://arvind.wtf/projects/uicardio/</link>
+      <pubDate>Fri, 31 Dec 2021 16:54:14 +0530</pubDate>
+      
+      <guid>https://arvind.wtf/projects/uicardio/</guid>
+      <description>This was my first project where you can download Bootstrap4 themes and templates. Most of themes are for Hugo (Static site generator). I started working with Haman Mahal where I used to handle all the techincial and desiging part like desiging the themes and then devloping for Hugo and mainting the site. Where as Haman used to handle all the writing part like handling blog secion and writing description for for products.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Arvind Singh</title>
+    <link>https://arvind.wtf/posts/</link>
+    <description>Recent content in Posts on Arvind Singh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 31 Dec 2021 16:38:38 +0530</lastBuildDate><atom:link href="https://arvind.wtf/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Posts are coming soon!</title>
+      <link>https://arvind.wtf/posts/how-i-sold-a-startup/</link>
+      <pubDate>Fri, 31 Dec 2021 16:38:38 +0530</pubDate>
+      
+      <guid>https://arvind.wtf/posts/how-i-sold-a-startup/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
